@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body style="text-align:center;  background:brown">
+        <h1>COUNTER</h1>
+       <div style="border-style:ridge;text-align:center; ">
+       <label id="l" style="font-size: larger;"></label><br>
+       <button id="b1" >-</button>&nbsp;&nbsp;&nbsp;
+       <button id="b2">+</button>
+
+    </div>
+        <script>
+        let zer0 =0;
+        let num= document.querySelector("div label");
+            num.innerHTML=zer0;
+        const b2=document.querySelector("#b2");
+        b2.addEventListener("click",()=>
+            num.innerHTML=zer0++);
+        const b1=document.querySelector("#b1");
+        b1.addEventListener("click",()=>{
+            num.innerHTML=zer0--;    
+       
+    });
+        
+        </script>
+    </body>
+</html>
